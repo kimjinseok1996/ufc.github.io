@@ -1,0 +1,700 @@
+@charset "utf-8";
+*{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "Adobe 고딕 Std";
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        header{
+            position: absolute;
+            background: white;
+            top: 50px;
+            left: 50%;
+            transform: translate(-50%,0);
+            width: 1200px;
+            height: 70px;
+            box-shadow: 0 4px 14px 0 rgb(0 0 0 / 20%);
+            z-index: 9999;
+        }
+        #header_underbar{
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: red;
+            left: 48.4%;
+            bottom: 0;
+            transition: 0.5s;
+        }
+        header.on{
+            position: fixed;
+            top: 0;
+            background: black;
+            color: white;
+        }
+        header ul li{
+            width: 25%;
+            text-align: center;
+            line-height: 70px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        header #logo{
+            width: 20%;
+            float: left;
+            height: 100%;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 70px;
+            cursor: pointer;
+        }
+        header #leftmenu{
+            width: 40%;
+            float: left;
+        }
+        header #leftmenu li{
+            float: left;
+        }
+        header #rightmenu{
+            width: 40%;
+            float: right;
+        }
+        header #rightmenu li{
+            float: right;
+        }
+        section{
+            position: relative;
+            width: 100%;
+            height: 4200px;
+            background: black;
+        }
+        #section1{
+            position: absolute;
+            width: 100%;
+            height: 950px;
+            background: url(ufcmain.jpg) no-repeat center;
+            background-size: 130%;
+            text-align: center;
+            color: white;
+        }
+        #sec1_textbox{
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #section1 p{
+            line-height: 80px;
+        }
+        #section1 #sec1_textbox p:nth-child(1){
+            font-size: 30px;
+        }
+        #section1 #sec1_textbox p:nth-child(2){
+            font-size: 85px;
+        }
+        #section1 #sec1_textbox p:nth-child(3){
+            font-size: 20px;
+        }
+        #sec1_fightcard{
+            background: white;
+            width: 140px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 11px;
+            cursor: pointer;
+            color: black;
+            border: 1px solid white;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,0);
+            margin-top: 30px;
+        }
+        #sec1_fightcardcover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: black;
+            transition: 0.3s;
+        }
+        #sec1_fightcard span{
+            position: absolute;
+            left: 28%;
+        }
+        #sec1_fightcard:hover span{
+            transition: 0.3s;
+            color: white;
+        }
+        #sec1_fightcard:hover #sec1_fightcardcover{
+            width: 100%;
+        }
+/*        --------------------section2------------------------------------*/
+        #section2{
+            position: absolute;
+            top: 950px;
+            background: white;
+            width: 100%;
+            height: 3170px;
+        }
+        #section2_now{
+            width: 100%;
+            height: 170px;
+            background: white;
+            box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
+        }
+        #section2_nowbox{
+            width: 1000px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        #section2_nowboxleft, #section2_nowboxright{
+            width: 50%;
+            height: 100%;
+            float: left;
+            cursor: pointer;
+        }
+        #section2_nowboxleft{
+            border-right: 2px solid rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+        .section2_nowboxtext{
+            float: left;
+            width: 200px;
+            height: 100%;
+        }
+        .section2_nowboxpic{
+            float: left;
+            width: 250px;
+            height: 100%;
+            background: black;
+        }
+        #section2_nowboxleft .section2_nowboxtext{
+            text-align: right;
+        }
+        .section2_nowboxtext p{
+        }
+        .section2_nowboxtext p:nth-child(1){
+            margin-top: 40px;
+            color: #888;
+            font-size: 13px;
+        }
+        .section2_nowboxtext p:nth-child(2){
+            margin-top: 20px;
+            line-height: 25px;
+            font-size: 21px;
+        }
+        #section2_nowboxright .section2_nowboxtext{
+            float: right;
+        }
+        #section2_nowboxright .section2_nowboxpic{
+            float: right;
+        }
+        #section2_nowboxleft .section2_nowboxpic{
+            background: url(now1.JPG) no-repeat center;
+            background-size: 105%;
+        }
+        #section2_nowboxright .section2_nowboxpic{
+            background: url(now2.JPG) no-repeat center;
+            background-size: 105%;
+        }
+        
+        
+        #section2_famous{
+            width: 1200px;
+            height: 1450px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 70px;
+            margin-top: 30px;
+            position: relative;
+        }
+        #section2_famous > p{
+            font-family: "Arial";
+        }
+        #section2_famous > p:nth-child(1){
+            font-size: 60px;
+        }
+        #section2_famous > p:nth-child(2){
+            font-size: 13px;
+            font-weight: bold;
+            color: #666;
+            margin-top: 10px;
+        }
+        #firstfamousbox{
+            position: absolute;
+            width: 46%;
+            height: 490px;
+            background: url(famousbox1.jpg) no-repeat center;
+            background-size: 150%;
+            top: 250px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: left;
+            padding: 30px;
+        }
+        #firstfamousbox:hover{
+            background-size: 155%;
+        }
+        #firstfamousbox p{
+            color: white;
+        }
+        #firstfamousbox p:nth-child(1){
+            line-height: 60px;
+            font-size: 60px;
+            margin-top: 320px;
+        }
+        #firstfamousbox p:nth-child(2){
+            font-size: 18px;
+            margin-top: 40px;
+            font-family: "Arial";
+        }
+        #secondfamousbox{
+            background: white;
+            position: absolute;
+            width: 46%;
+            height: 300px;
+            right: 5px;
+            top: 700px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+            opacity: 0;
+            transition: 0.8s;
+        }
+        #secondfamousboxpic{
+            width: 50%;
+            height: 100%;
+            background: url(famousbox2.jpg) no-repeat center;
+            background-size: 170%;
+            float: left;
+            transition: 0.3s;
+        }
+        #secondfamousboxtext{
+            width: 30%;
+            height: 63.3%;
+            float: left;
+            padding: 10%;
+            text-align: left;
+        }
+        #secondfamousboxtext p{
+            margin-top: 60px;
+            font-size: 23px;
+            line-height: 30px;
+        }
+        #secondfamousbox:hover #secondfamousboxpic{
+            background-size: 175%;
+        }
+        #thirdfamousbox{
+            background: white;
+            position: absolute;
+            width: 51%;
+            height: 300px;
+            left: 0;
+            top: 1300px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+            opacity: 0;
+            transition: 0.8s;
+        }
+        #thirdfamousboxpic{
+            width: 50%;
+            height: 100%;
+            background: url(famousbox3.jpg) no-repeat center;
+            background-size: 170%;
+            float: left;
+            transition: 0.3s;
+        }
+        #thirdfamousboxtext{
+            width: 30%;
+            height: 63.3%;
+            float: left;
+            padding: 10%;
+            text-align: left;
+        }
+        #thirdfamousboxtext p{
+            margin-top: 60px;
+            font-size: 23px;
+            line-height: 30px;
+        }
+        #thirdfamousbox:hover #thirdfamousboxpic{
+            background-size: 175%;
+        }
+        #fourbox{
+            position: absolute;
+            top: 1100px;
+            right: 5px;
+            width: 46%;
+            height: 300px;
+            background: white;
+        }
+        #fourboxleft, #fourboxright{
+            width: 40.005%;
+            height: 82%;
+            float: left;
+            padding: 5%;
+            cursor: pointer;
+        }
+        #fourboxleft{
+            opacity: 0;
+            margin-top: 200px;
+            transition: 0.8s;
+        }
+        #fourboxleft p:nth-child(1){
+            font-size: 18px;
+            text-align: left;
+        }
+        #fourboxright{
+            background: url(famousbox4.jpg) no-repeat center;
+            background-size: 170%;
+            transition: 0.3s;
+        }
+        #fourboxright:hover{
+            background-size: 175%;
+        }
+        #fourboxright p{
+            color: white;
+            text-align: left;
+        }
+        #fourboxright p:nth-child(1){
+            font-size: 33px;
+            line-height: 35px;
+            margin-top: 120px;
+        }
+        #fourboxright p:nth-child(2){
+            margin-top: 40px;
+            font-family: "Arial";
+        }
+        #fourboxlefttext{
+            position: relative;
+            background: white;
+            color: black;
+            width: 150px;
+            height: 50px;
+            font-family: "Arial";
+            line-height: 50px;
+            text-align: center;
+            margin-top: 130px;
+            margin-left: 30px;
+            cursor: pointer;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        #fourboxleft:hover #fourboxlefttext{
+            border: 1px solid black;
+        }
+        #fourboxleft:hover span{
+            color: black;
+        }
+        #fourboxleft:hover #fourboxlefttextcover{
+            width: 0;
+        }
+        #fourboxlefttext span{
+            position: absolute;
+            color: white;
+            left: 30px;
+            transition: 0.3s;
+        }
+        #fourboxlefttextcover{
+            position: absolute;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            transition: 0.3s;
+        }
+/*        ------------------------------------gongik---------------------*/
+        #section2_gong{
+            width: 100%;
+            height: 600px;
+            background: url(octagon1.jpg) no-repeat top;
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            position: relative;
+        }
+        #gong_cont{
+            width: 100%;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            transition: 0.8s;
+            opacity: 0;
+        }
+        #gong_text{
+            text-align: center;
+        }
+        #gong_btnbox{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+        #section2_gong #gong_text p{
+            line-height: 80px;
+        }
+        #section2_gong #gong_text p:nth-child(1){
+            font-size: 100px;
+        }
+        #section2_gong #gong_text p:nth-child(2){
+            font-size: 20px;
+        }
+        #gong_psa, #gong_psa2{
+            width: 140px;
+            height: 55px;
+            border: 1px solid rgba(0,0,0,0.1);
+            background: white;
+            text-align: center;
+            line-height: 55px;
+            font-size: 12px;
+            float: left;
+            color: black;
+            cursor: pointer;
+            position: relative;
+        }
+        #gong_psa2{
+            margin-left: 30px;
+        }
+        #gong_psa_underbar, #gong_psa2_underbar{
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            background: red;
+            transition: 0.3s;
+        }
+        #gong_psa:hover #gong_psa_underbar{
+            width: 100%;
+        }
+        #gong_psa2:hover #gong_psa2_underbar{
+            width: 100%;
+        }
+/*        --------------------------------------lastarticle-------*/
+        #section2_lastarticle{
+            position: relative;
+            width: 1200px;
+            height: 800px;
+            margin: 0 auto;
+        }
+        #first_article{
+            background: white;
+            position: absolute;
+            width: 51%;
+            height: 300px;
+            top: 200px;
+            left: 0;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+            opacity: 0;
+            transition: 0.8s;
+        }
+        #first_articleboxpic{
+            width: 50%;
+            height: 100%;
+            background: url(unga.jpg) no-repeat center;
+            background-size: 150%;
+            float: left;
+            transition: 0.3s;
+        }
+        #first_articletext{
+            width: 30%;
+            height: 63.3%;
+            float: left;
+            padding: 10%;
+            text-align: left;
+        }
+        #first_articletext p{
+            margin-top: 60px;
+            font-size: 23px;
+            line-height: 30px;
+        }
+        #first_article:hover #first_articleboxpic{
+            background-size: 155%;
+        }
+        #second_article{
+            position: absolute;
+            right: 250px;
+            top: 50px;
+            width: 250px;
+            height: 250px;
+            float: left;
+            padding: 2%;
+            cursor: pointer;
+        }
+        #second_article{
+            background: url(secarti.jpg) no-repeat center;
+            background-size: 140%;
+            transition: 0.3s;
+        }
+        #second_article:hover{
+            background-size: 145%;
+        }
+        #second_article p{
+            color: white;
+            text-align: left;
+        }
+        #second_article p:nth-child(1){
+            font-size: 33px;
+            line-height: 35px;
+            margin-top: 80px;
+        }
+        #second_article p:nth-child(2){
+            margin-top: 50px;
+            font-family: "Arial";
+        }
+        #third_article{
+            position: absolute;
+            right: 250px;
+            top: 390px;
+            width: 250px;
+            height: 250px;
+            float: left;
+            padding: 2%;
+            cursor: pointer;
+        }
+        #third_article{
+            background: url(thirdarti.jpg) no-repeat center;
+            background-size: 145%;
+            transition: 0.3s;
+        }
+        #third_article:hover{
+            background-size: 150%;
+        }
+        #third_article p{
+            color: white;
+            text-align: left;
+        }
+        #third_article p:nth-child(1){
+            font-size: 33px;
+            line-height: 35px;
+            margin-top: 130px;
+        }
+        #third_article p:nth-child(2){
+            margin-top: 30px;
+            font-family: "Arial";
+        }
+        #lastarticle_btn{
+            background: white;
+            width: 210px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 13px;
+            border: 1px solid rgba(0,0,0,0.2);
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,0);
+            transition: 0.3s;
+        }
+        #lastarticle_btncover{
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: red;
+            transition: 0.3s;
+        }
+        #lastarticle_btn:hover{
+            background: #ededed;
+        }
+        #lastarticle_btn:hover #lastarticle_btncover{
+            width: 100%;
+        }
+/*        ----------------------------footer-------------------------*/
+        footer{
+            position: absolute;
+            width: 1200px;
+            height: 400px;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+        #footermenu{
+            position: absolute;
+            top: 30px;
+            right: 0;
+            font-size: 14px;
+            color: white;
+        }
+        #footermenu div{
+            float: left;
+            width: 130px;
+        }
+        #footermenu div p a{
+            color: #777;
+        }
+        #footermenu div p a:hover{
+            color: white;
+        }
+        footer #copy{
+            position: absolute;
+            bottom: 60px;
+            color: #777;
+        }
+        footer #footerDoNot{
+            position: absolute;
+            width: 220px;
+            height: 30px;
+            background: white;
+            border-radius: 5px;
+            color: red;
+            bottom: 120px;
+            left: 50px;
+            text-align: right;
+            padding: 10px;
+            cursor: pointer;
+        }
+        footer #footerDoNot p{
+            font-size: 11px;
+            line-height: 13px;
+        }
+        footer #footerDoNot p:nth-child(1){
+            font-size: 13px;
+        }
+        #footerlogo{
+            position: absolute;
+            top:30px;
+        }
+        #footerlogotext, #footlang{
+            float: left;
+            color: white;
+            cursor: pointer;
+        }
+        #footerlogotext{
+            font-size: 30px;
+            margin: 0 30px 0 0;
+            line-height: 40px;
+        }
+        #langbox{
+            position: absolute;
+            top: 30px;
+            left: 80px;
+            width: 180px;
+            height: 140px;
+            background: white;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: "Arial";
+            display: none;
+        }
+        #langbox p{
+            line-height: 26px;
+        }
+        #langbox p a{
+            color: black;
+            font-size: 13px;
+        }
+        #langbox p a:hover{
+            font-weight: bold;
+        }
